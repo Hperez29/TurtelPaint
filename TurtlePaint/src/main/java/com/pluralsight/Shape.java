@@ -1,16 +1,19 @@
 package com.pluralsight;
 
+import java.awt.Point;
+import java.awt.Color;
+
 public abstract class Shape {
     protected Turtle turtle;
     protected Point location;
-    protected String color;
-    protected int border;
+    protected Color color;
+    protected int borderWidth;
 
-    public Shape(Turtle turtle, Point location, String color, int border) {
+    public Shape(Turtle turtle, Point location, Color color, int borderWidth) {
         this.turtle = turtle;
         this.location = location;
         this.color = color;
-        this.border = border;
+        this.borderWidth = borderWidth;
     }
 
     public abstract void paint();
